@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Мой сайт</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="sniper/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header class="b-header container-box">
+    <div class="b-header__inner ">
+      <div class="b-burger-box b-burger-boxjs">
+        <span class="b-burger"></span>
+        <span class="b-burger"></span>
+        <span class="b-burger"></span>
+      </div>
+      <nav class="b-nav   b-nav--hidden b-nav--mobil b-header__navjs ">
+        <ul class="b-nav__list b-nav__list--mobil">
+          <li class="b-nav__listed b-nav__listed--bottom"><a href="#1" class=" b-nav__link services-js">Услуги</a></li>
+          <li class="b-nav__listed b-nav__listed--bottom"><a href="#2" class="b-nav__link portfolio-js ">Портфолио</a></li>
+          <li class="b-nav__listed b-nav__listed--bottom"><a href="#3" class="b-nav__link  cost-js">Стоимость</a></li>
+        </ul>
+
+        <div class="b-close-burger">
+          <span class="b-close-burger__line b-close-burger__line--first"></span>
+          <span class="b-close-burger__line b-close-burger__line--two"></span>
+        </div>
+      </nav>
+      <div class="b-header__contact">
+        <a href="tel:89876871371" class="b-tel">+8 (987) 687-13-71</a>
+        <button type="submit" class="b-button b-button--hiden b-buttonjs">Заказать звонок</button>
+      </div>
+      <div class="b-form-block b-form-blockJs">
+        <form class="b-form-block__form">
+          <div class="b-form-block__close">
+            <span class="b-form-block__linear b-form-block__linear--first"></span>
+            <span class="b-form-block__linear b-form-block__linear--two "></span>
+          </div>
+          <h3 class="b-form-block__legend">Заказать звонок</h3>
+          <label for="name" class="b-form-block__label">Как к Вам обращатся?</label>
+          <input type="text" name="name" id="name" class="b-form-block__name" placeholder="Анатолий Сергеевич">
+          <label for="number" class="b-form-block__label">Введете ваш номер телефона</label>
+          <input type="tel" name="number" id="number" placeholder="+7 (987) 687-13-71" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]" class="b-form-block__number">
+          <div class="b-form-block__box">
+            <input type="submit" value="Отправить" class="b-form-block__submit">
+            <input type="reset" value="Сброс" class="b-form-block__reset">
+          </div>
+        </form>
+      </div>
+      <div class="overlay js-overlay-modal"></div>
+      <div class="b-header__tel">
+        <button class="b-button__tel b-buttonjs-mobil"><img src="img/telefonmobil.png" class="b-tel__img" alt="Телефон"></button>
+      </div>
+    </div>
+  </header>
+  <main class="b-main">
+    <section class="b-aboutme container-box">
+      <span class="b-icon b-icon--bracket">{&nbsp;}</span>
+      <span class="b-icon b-icon--div">&lt;div&gt;</span>
+      <span class="b-icon b-icon--lattice">#</span>
+      <span class="b-icon b-icon--closing">&lt;/&gt;</span>
+      <span class="b-icon b-icon--div-two">&lt;div&gt;</span>
+      <span class="b-icon b-icon--closing-two">&lt;/&gt;</span>
+      <div class="b-aboutme__block">
+        <h1 class="b-aboutme__title">Анатолий&nbsp;Иванушкин</h1>
+        <p class="b-aboutme__page">Frontend-разработчик и веб-верстальщик</p>
+        <a href="#" class="link  about-me__js" >Узнать больше</a>
+        </div>
+      <div class="b-aboutme-modal">
+          <h2>Немного о себе</h2>
+          <p>Мне 25 лет. На данный момент прохожу курсы по верстке сайтов в Skillbox</p>
+          <h2>Что я знаю и умею</h2>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Less</li>
+            <li>Валидная и семантическая верстка</li>
+            <li>Адаптивная верстка под любые устройсва</li>
+            <li>БЭМ</li>
+            <li>Mobile First</li>
+            <li>Desktop First</li>
+            <li>Git</li>
+            <li>Photoshop</li>
+            <li>Zeplin</li>
+            <li>Основы JavaScript</li>
+          </ul>
+          <h2>Знаком с</h2>
+          <ul>
+          <li>twig</li>
+          <li>pug</li>
+        </ul>
+          <button class="b-aboutme-modal__close link link--width">Закрыть</button>
+          <div class="overlay js-overlay-modal"></div>
+        </div>
+      <div class="b-aboutme__inner">
+        <div class="b-aboutme__img-box">
+          <img src="img/shutterstock.png" height="651" width="435" alt="Разработчик" class="b-aboutme__img">
+        </div>
+      </div>
+      <picture class="b-aboutme__background">
+        <source srcset="img/Ellipse3.svg" media="(max-width: 767px)">
+        <source srcset="img/Ellipse2.svg" media="(max-width: 1360px)">
+        <img src="img/Ellipse1.svg" class="b-aboutme__background-img" alt="Фон">
+      </picture>
+    </section>
+    <section class="b-skills container-box">
+      <h2 class="b-skills__title" id="1">Что я делаю</h2>
+      <div class="b-skills__wrap">
+        <ul class="b-skills__listed">
+          <li class="b-skills__work">
+            <div class="b-skills__picture">
+              <img src="img/tools-and-utensils.png" alt="Верстка" class="b-skills__img">
+            </div>
+            <p class="b-skills__page">Вёрстка лендинг–страниц и сайтов любой сложности</p>
+          </li>
+          <li class="b-skills__work">
+            <div class="b-skills b-skills__picture">
+              <img src="img/responsive.png" alt="" class="b-skills__img">
+            </div>
+            <p class=" b-skills__page">Адаптивная вёрстка под все браузеры и устройства</p>
+          </li>
+          <li class="b-skills__work">
+            <div class="b-skills b-skills__picture">
+              <img src="img/programming.png" alt="Frontend–разработка" class="b-skills__img">
+            </div>
+            <p class="  b-skills__page">Frontend–разработка и программирование</p>
+          </li>
+          <li class="b-skills__work">
+            <div class="b-skills b-skills__picture">
+              <img src="img/coding.png" height="74" width="74" alt="Исправление" class="b-skills__img">
+            </div>
+            <p class="b-skills__page">Исправление и доработка существующей вёрстки</p>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="link link--center link-price-js" id="3">Узнать стоимость</a>
+      <section class="b-price">
+        <h2>Цены</h2>
+        <div class="b-price__wrapper">
+        <figure class="b-price__figure">
+          <img src="img/tools-and-utensils.png">
+          <figcaption>Верстка лейдингов от 4000р*</figcaption>
+        </figure>
+        <figure class="b-price__figure">
+          <img src="img/responsive.png">
+          <figcaption class="b-price__figucaption">Адаптивная вёрстка под все браузеры и устройства от 800р*</figcaption>
+        </figure>
+        <figure class="b-price__figure">
+          <img src="img/programming.png">
+          <figcaption class="b-price__figucaption">Frontend–разработка и программирование от 5000р*</figcaption>
+        </figure>
+        <figure class="b-price__figure">
+          <img src="img/coding.png">
+          <figcaption class="b-price__figucaption">Исправление и доработка существующей вёрстки от 1000р*</figcaption>
+        </figure>
+      </div>
+        <button class="b-button-price-js link link--width">Закрыть</button>
+        <div class="overlay js-overlay-modal"></div>
+      </section>
+    </section>
+    <section class="b-examples container-box" id="2">
+      <h2 class="b-examples__subtitle">Примеры моих работ</h2>
+      <button class="swiper-button-prev"></button>
+      <button class="swiper-button-next"></button>
+      <div class="swiper-container container-box">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide card">
+            <img src="img/work1.jpg" class="swiper-img" alt="Сайт психолога Веры Антоновой">
+            <p class="swiper__page">Сайт психолога Веры Антоновой</p>
+          </div>
+          <div class="swiper-slide card">
+            <img src="img/work2.jpg" class="swiper-img" alt="Сайт магазина детской одежды">
+            <p class="swiper__page">Сайт магазина детской одежды</p>
+          </div>
+          <div class="swiper-slide card">
+            <img src="img/work3.jpg" class="swiper-img" alt="Сайт магазина «Рыболов»">
+            <p class="swiper__page">Сайт магазина «Рыболов»</p>
+          </div>
+        </div>
+        <div class="swiper-pagination">
+        </div>
+      </div>
+      <a class="link link--center link__js">Заказать проект</a>
+      <div class="b-form-block-order b-form-block-order-js">
+      <form class="b-form-block__form">
+          <div class="b-form-order__close">
+            <span class="b-form-block__linear b-form-block__linear--first"></span>
+            <span class="b-form-block__linear b-form-block__linear--two "></span>
+          </div>
+          <h3 class="b-form-block__legend b-form-block__legend--top">Прикрепите ваше ТЗ и дизайн сайта</h3>
+          <label for="name" class="b-form-block__label">Введите ваше имя и фамилию</label>
+          <input type="text" name="name" id="name_surname" class="b-form-block__name" placeholder="Анатолий Сергеевич">
+          <label for="number" class="b-form-block__label">Введете ваш номер телефона</label>
+          <input type="tel" name="number" id="phone" placeholder="+7 (987) 687-13-71"  class="b-form-block__number">
+          <label> 
+            <span>ТЗ</span>
+          <input type="file" name="file">
+          </label>
+          <label> 
+            <span>Дизайн сайта</span>
+          <input type="file" name="file">
+          </label>
+          <div class="b-form-block__box">
+            <input type="submit" value="Отправить" class="b-form-block__submit">
+            <input type="reset" value="Сброс" class="b-form-block__reset">
+          </div>
+        </form>
+      </div>
+    </section>
+    <article class="b-advertising">
+      <h2 class="b-advertising__title">Адаптивная вёрстка под все устройства  <br>и браузеры от 1000 рублей всего за 4 часа.</h2>
+      <p class="b-advertising__page"> Срок и стоимость могут отличаться от заявленных и рассчитываеются индивидуально, в зависимости от сложности задач.</p>
+      <span class="b-advertising__icon b-advertising__icon--bracket">{&nbsp;}</span>
+      <span class="b-advertising__icon b-advertising__icon--div">&lt;div&gt;</span>
+      <span class="b-advertising__icon b-advertising__icon--lattice">#</span>
+      <span class="b-advertising__icon b-advertising__icon--closing">&lt;/&gt;</span>
+      <span class="b-advertising__icon b-advertising__icon--div-two">&lt;div&gt;</span>
+      <span class="b-advertising__icon b-advertising__icon--closing-two">&lt;/&gt;</span>
+    </article>
+  </main>
+  <footer class="b-footer">
+    <div class="footer__wrap container-box">
+      <nav class="b-nav">
+        <ul class="b-nav__list b-nav__list--derection">
+          <li class="b-nav__listed"><a href="#" class="b-nav__link b-nav__link--color">Услуги</a></li>
+          <li class="b-nav__listed"><a href="#" class="b-nav__link b-nav__link--color">Портфолио</a></li>
+          <li class="b-nav__listed"><a href="#" class="b-nav__link b-nav__link--color">Стоимость</a></li>
+        </ul>
+      </nav>
+      <section class="b-footer__contact ">
+        <a href="tel:89876871371" class="b-footer__number icon-phone">8(987) 687-13-71</a>
+        <a href="mailto:tolya467@mail.ru" class="b-footer__mail icon-mail-alt">Tolya467@mail.ru</a>
+      </section>
+      <div class="b-footer__inner">
+        <button class="b-button b-button--width b-button--position b-buttonjs-footer">Заказать звонок</button>
+        <ul class="b-social">
+          <li class=" b-social__list">
+            <a href="https://vk.com/id75856884" class="b-social__link b-social__link--vk"></a>
+          </li>
+          <li class="b-social__list">
+            <a href="#" class="b-social__link b-social__link--fac"></a>
+          </li>
+          <li class="b-social__list">
+            <a href="#" class="b-social__link b-social__link--twit"></a>
+          </li>
+          <li class="b-social__list">
+            <a href="#" class="b-social__link b-social__link--inst"></a>
+          </li>
+        </ul>
+    </div>
+  </div>
+    <div class="b-footer__end">
+      <p class="b-footer__text">&copy; Анатолий Иванушкин, 2019-2020</p>
+    </div>
+  </footer>
+  <script src="sniper/swiper.min.js"></script>
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="mask/jquery.inputmask.min.js"></script>
+  <script src="jquery.validate.min.js"></script>
+  <script src="slider.js"></script>
+  <script src="mask.js"></script>
+  <script src="javascript.js"></script>
+</body>
+</html>
